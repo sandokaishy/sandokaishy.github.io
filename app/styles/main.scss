@@ -4,3 +4,33 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+$sudo_blue: #101740;
+
+nav {
+  display: flex; 
+  background-color: $sudo_blue;
+  
+  align-items: center;
+  justify-content: space-around;
+  
+  padding: 7px 21px;
+
+  .logo {
+    flex-grow: 7;
+    img {
+      width: 30px;
+    }
+  }
+  .nav_list {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    a {
+      color: white;
+      display: block;
+      padding: 14px;
+
+      text-decoration: none;
+    }
+  }
+}
